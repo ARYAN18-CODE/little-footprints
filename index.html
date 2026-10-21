@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Little Footprints — Know the footprint behind the products you love</title>
+  <meta name="description" content="Little Footprints shows parents and pet owners the real carbon footprint of everyday products — so you can make cleaner choices without the guesswork." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Little Footprints home">
+        <span class="brand__mark" aria-hidden="true">🌱</span>
+        <span class="brand__name">Little&nbsp;Footprints</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#demo">Live demo</a>
+        <a href="#method">Our method</a>
+        <a href="#who">Who it's for</a>
+      </nav>
+      <a href="#waitlist" class="btn btn--primary nav__cta">Join the waitlist</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" hidden>
+      <a href="#how">How it works</a>
+      <a href="#demo">Live demo</a>
+      <a href="#method">Our method</a>
+      <a href="#who">Who it's for</a>
+      <a href="#waitlist" class="btn btn--primary">Join the waitlist</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">For parents &amp; pet parents</p>
+          <h1>Know the footprint behind the products you love.</h1>
+          <p class="lede">
+            You already read the ingredients. Little Footprints shows you the
+            <strong>carbon footprint</strong> too — in plain numbers — so you can pick
+            the cleaner option without becoming a scientist.
+          </p>
+          <div class="hero__actions">
+            <a href="#waitlist" class="btn btn--primary btn--lg">Get early access</a>
+            <a href="#demo" class="btn btn--ghost btn--lg">Try the demo ↓</a>
+          </div>
+          <ul class="hero__trust">
+            <li><strong>Life-cycle based</strong> estimates</li>
+            <li><strong>Sources shown</strong> for every score</li>
+            <li><strong>No greenwashing</strong>, just ranges</li>
+          </ul>
+        </div>
+
+        <!-- Hero product card -->
+        <div class="hero__card" aria-hidden="true">
+          <div class="pcard pcard--float">
+            <div class="pcard__top">
+              <div class="pcard__emoji">🍼</div>
+              <div>
+                <div class="pcard__name">Organic Cotton Onesie</div>
+                <div class="pcard__sub">0–3 months · 3-pack</div>
+              </div>
+            </div>
+            <div class="score score--b">
+              <span class="score__grade">B</span>
+              <div>
+                <div class="score__kg">2.1 kg CO₂e</div>
+                <div class="score__note">per item, all-in</div>
+              </div>
+            </div>
+            <div class="bars">
+              <div class="bar"><span>Materials</span><i style="--w:62%"></i></div>
+              <div class="bar"><span>Making it</span><i style="--w:48%"></i></div>
+              <div class="bar"><span>Shipping</span><i style="--w:22%"></i></div>
+              <div class="bar"><span>Packaging</span><i style="--w:14%"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="band">
+      <div class="wrap center narrow">
+        <p class="eyebrow">The gap</p>
+        <h2>Labels tell you what's inside. Nothing tells you what it costs the planet.</h2>
+        <p class="muted big">
+          "Eco", "green", and "natural" are everywhere — and mean almost nothing.
+          A caring shopper is left guessing. We turn that guess into a number you can compare.
+        </p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <div class="section__head center">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps, no homework.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num">1</div>
+            <h3>Search or scan</h3>
+            <p>Look up a product by name or barcode — baby wipes, a onesie, your dog's food.</p>
+          </li>
+          <li class="step">
+            <div class="step__num">2</div>
+            <h3>We do the math</h3>
+            <p>We estimate its footprint across its whole life: materials, making, shipping, packaging, disposal.</p>
+          </li>
+          <li class="step">
+            <div class="step__num">3</div>
+            <h3>See it clearly</h3>
+            <p>A simple grade, the kg of CO₂e, where it comes from — and a lower-impact swap.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Interactive demo -->
+    <section id="demo" class="section section--tint">
+      <div class="wrap">
+        <div class="section__head center">
+          <p class="eyebrow">Live demo</p>
+          <h2>Pick a product. See its footprint.</h2>
+          <p class="muted">Sample data for illustration — the real app uses live, sourced estimates.</p>
+        </div>
+
+        <div class="demo">
+          <div class="demo__picker" role="tablist" aria-label="Choose a product">
+            <button class="chip is-active" role="tab" data-product="onesie">🍼 Cotton onesie</button>
+            <button class="chip" role="tab" data-product="wipes">🧻 Baby wipes</button>
+            <button class="chip" role="tab" data-product="dogfood">🐾 Dog food (12kg)</button>
+            <button class="chip" role="tab" data-product="bottle">🍶 Plastic bottle</button>
+          </div>
+
+          <div class="demo__stage">
+            <div class="pcard pcard--lg" id="demoCard" aria-live="polite">
+              <!-- filled by app.js -->
+            </div>
+
+            <div class="swap" id="demoSwap">
+              <!-- filled by app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section id="who" class="section">
+      <div class="wrap">
+        <div class="section__head center">
+          <p class="eyebrow">Who it's for</p>
+          <h2>Built for the people who read every label.</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">👶</div>
+            <h3>New parents</h3>
+            <p>You're already careful about what touches your baby. Now you can be just as careful about the footprint it leaves behind.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🐶</div>
+            <h3>Pet parents</h3>
+            <p>Food, litter, toys, treats — pets add up fast. See which brands are genuinely lighter on the planet.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🛒</div>
+            <h3>Conscious shoppers</h3>
+            <p>Anyone tired of vague "eco" claims and ready for a number they can actually trust and compare.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="method" class="section section--dark">
+      <div class="wrap">
+        <div class="section__head center">
+          <p class="eyebrow eyebrow--light">Our method</p>
+          <h2>How we calculate a footprint — honestly.</h2>
+          <p class="muted big">
+            A footprint is an estimate, not a weather report. We're upfront about how we get there
+            and where the uncertainty lives.
+          </p>
+        </div>
+
+        <div class="method">
+          <div class="method__stage">
+            <span class="dot"></span>
+            <h3>Materials</h3>
+            <p>What it's made of and how much. Cotton, plastic, meat and metal each carry very different emissions.</p>
+          </div>
+          <div class="method__stage">
+            <span class="dot"></span>
+            <h3>Manufacturing</h3>
+            <p>Energy used to turn raw material into a finished product, weighted by where it's made.</p>
+          </div>
+          <div class="method__stage">
+            <span class="dot"></span>
+            <h3>Transport</h3>
+            <p>How far it travels to reach you, and by ship, truck, or air.</p>
+          </div>
+          <div class="method__stage">
+            <span class="dot"></span>
+            <h3>Packaging</h3>
+            <p>The box, wrap and filler — counted, not ignored.</p>
+          </div>
+          <div class="method__stage">
+            <span class="dot"></span>
+            <h3>End of life</h3>
+            <p>Whether it's recycled, composted, or sent to landfill.</p>
+          </div>
+        </div>
+
+        <div class="method__notes">
+          <div class="note">
+            <h4>We use recognised data</h4>
+            <p>Estimates are built on published life-cycle assessment (LCA) databases and peer-reviewed emission factors — the same categories the ISO&nbsp;14040 standard defines.</p>
+          </div>
+          <div class="note">
+            <h4>We show ranges, not false precision</h4>
+            <p>When the data is fuzzy, we say so with a range and a confidence label instead of inventing a tidy number.</p>
+          </div>
+          <div class="note">
+            <h4>You can see our sources</h4>
+            <p>Every score links to the assumptions and factors behind it. If we can't source it, we don't score it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div class="cta__copy">
+            <h2>Be first to shop with a clear conscience.</h2>
+            <p class="muted">Join the waitlist and we'll let you know the moment Little Footprints opens.</p>
+          </div>
+          <form class="cta__form" id="waitForm" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            <button type="submit" class="btn btn--primary btn--lg">Join waitlist</button>
+            <p class="cta__msg" id="waitMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <a class="brand brand--footer" href="#top">
+          <span class="brand__mark" aria-hidden="true">🌱</span>
+          <span class="brand__name">Little Footprints</span>
+        </a>
+        <p class="muted small">Carbon clarity for the things your family — and your pets — use every day.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#how">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#method">Method</a>
+        <a href="#waitlist">Waitlist</a>
+      </nav>
+    </div>
+    <div class="wrap footer__fine">
+      <p class="muted small">© <span id="year"></span> Little Footprints. A concept site. Footprint figures shown are illustrative.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
