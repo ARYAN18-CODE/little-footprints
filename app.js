@@ -13,7 +13,7 @@
       sub: "0–3 months · 3-pack",
       grade: "B", kg: "2.1 kg CO₂e", note: "per item, all-in",
       breakdown: [["Materials", 62], ["Making it", 48], ["Shipping", 22], ["Packaging", 14]],
-      swap: { emoji: "♻️", name: "Second-hand / rental onesie", savePct: 70, saveKg: "1.5 kg" }
+      swap: { emoji: "🌿", name: "Recycled-cotton onesie", savePct: 45, saveKg: "0.9 kg" }
     },
     wipes: {
       emoji: "🧻",
@@ -128,4 +128,17 @@
   // Year
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
+
+  // Scroll reveal (subtle fade-up as sections enter view)
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var targets = document.querySelectorAll(".section__head, .step, .card, .note, .method__stage, .cta, .demo, .band .narrow");
+  if (!reduce && "IntersectionObserver" in window) {
+    targets.forEach(function (el) { el.classList.add("reveal"); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    targets.forEach(function (el) { io.observe(el); });
+  }
 })();
