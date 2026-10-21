@@ -23,16 +23,16 @@
       breakdown: [["Materials", 55], ["Making it", 40], ["Shipping", 30], ["Packaging", 78]],
       swap: { emoji: "🧺", name: "Reusable cloth wipes", savePct: 85, saveKg: "4.1 kg" }
     },
-    dogfood: {
-      emoji: "🐾",
-      name: "Beef Dog Food",
-      sub: "Dry kibble · 12 kg bag",
-      grade: "E", kg: "41 kg CO₂e", note: "per bag",
-      breakdown: [["Materials", 94], ["Making it", 46], ["Shipping", 34], ["Packaging", 20]],
-      swap: { emoji: "🍗", name: "Chicken or insect-protein food", savePct: 60, saveKg: "25 kg" }
+    toy: {
+      emoji: "🪵",
+      name: "Wooden Stacking Toy",
+      sub: "FSC beech · boxed",
+      grade: "A", kg: "0.9 kg CO₂e", note: "per toy",
+      breakdown: [["Materials", 40], ["Making it", 30], ["Shipping", 24], ["Packaging", 18]],
+      swap: { emoji: "♻️", name: "Reclaimed-wood toy", savePct: 30, saveKg: "0.3 kg" }
     },
     bottle: {
-      emoji: "🍶",
+      emoji: "🍼",
       name: "Plastic Baby Bottle",
       sub: "Polypropylene · single",
       grade: "C", kg: "3.3 kg CO₂e", note: "per bottle",
@@ -131,7 +131,7 @@
 
   // Scroll reveal (subtle fade-up as sections enter view)
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var targets = document.querySelectorAll(".section__head, .step, .card, .note, .method__stage, .cta, .demo, .band .narrow");
+  var targets = document.querySelectorAll(".section__head, .apple__head, .gcard, .step, .card, .note, .method__stage, .cta, .demo, .band .narrow");
   if (!reduce && "IntersectionObserver" in window) {
     targets.forEach(function (el) { el.classList.add("reveal"); });
     var io = new IntersectionObserver(function (entries) {
