@@ -98,6 +98,30 @@ The recognised standard is **ISO 14067**, an extension of the **ISO 14040/14044*
 
 ---
 
+## 8. Product footprint estimates (the figures used on the site)
+
+These are **rough, research-based estimates** for the sample catalogue, synthesised from the
+published studies below. They are cradle-to-retail per item unless noted, and real figures
+would need a product-specific LCA. Grades: **A** <1.5 · **B** 1.5–3 · **C** 3–6 · **D** 6–12 · **E** >12 kg CO₂e.
+
+| Product | Estimate | Grade | Basis |
+|---------|----------|:-----:|-------|
+| Organic cotton teddy (~300 g) | ~1.3 kg CO₂e | A | Liverpool FC plush LCA: 1.32 kg CO₂e cradle-to-retail; raw materials ≈60% |
+| Organic cotton onesie (single) | ~2.3 kg CO₂e | B | Chinese cotton LCA: childrenswear ≈2.4 kg CO₂e/garment |
+| Recycled cotton onesie (3-pack) | ~4.6 kg CO₂e | C | ≈3× a single garment, less ~20–35% for recycled cotton |
+| Wooden stacking toy | ~0.8 kg CO₂e | A | Wood ≈77% lower GHG than a plastic equivalent (Yamane & Kayo 2025) |
+| Bamboo plate & cup set | ~1.3 kg CO₂e | A | No direct LCA; reusable tableware — payback depends on reuse count & washing |
+| Reusable cloth diapers (set of 6) | saves ~490 kg | A | UK Defra/EA: ~470–570 kg over 2.5 yrs vs ~550 kg disposable; reuse/line-dry saves up to ~40% |
+| Organic muslin blanket | ~2.2 kg CO₂e | B | Cotton textile factors (~2.4 kg CO₂e per garment, scaled to fabric weight) |
+| Scented baby wipes (80-pack) | ~4.8 kg CO₂e | D | Plastic-fibre, single-use; indicative only — no verified pack-level LCA found |
+
+**Honesty notes:**
+- The diaper figure is a *lifetime* comparison (functional unit = 2.5 years of diapering), not a per-item make footprint — it's the fair way to show a reusable's benefit, and it depends heavily on how they're washed.
+- Baby-wipes and bamboo numbers are the weakest; treat them as placeholders until a pack- or product-level LCA is sourced.
+- Recycled/organic cotton reductions vary widely by supplier; the ranges above are conservative.
+
+---
+
 ## Sources
 
 - [CNBC — parents & sustainable products (HP/Morning Consult)](https://www.cnbc.com/2023/06/20/climate-change-affects-53percent-of-parents-decision-to-have-more-kids.html)
@@ -117,3 +141,12 @@ The recognised standard is **ISO 14067**, an extension of the **ISO 14040/14044*
 - [Carbon Footprint Ltd — product life cycle factors](https://www.carbonfootprint.com/productlifecyclefactors.html)
 - [edie — EU Green Claims Directive explainer](https://www.edie.net/everything-you-need-to-know-about-the-eus-green-claims-directive/)
 - [Osborne Clarke — Green Claims Directive proposal](https://osborneclarke.com/insights/next-step-against-greenwashing-eu-commissions-proposal-green-claims-directive)
+
+**Product-footprint sources (section 8):**
+- [Liverpool FC — Red Ted plush carbon footprint (~1.32 kg CO₂e)](https://www.liverpoolfc.com/corporate/red-ted-plush)
+- [Yamane & Kayo (2025) — wooden vs plastic toy GHG, ~77% lower](https://ideas.repec.org/a/gam/jsusta/v17y2025i6p2351-d1607587.html)
+- [Robertson & Klimas (DePaul, 2019) — toy material LCA](https://via.library.depaul.edu/depaul-disc/vol8/iss1/7)
+- [Medical News Today — diapers: ~550 kg disposable vs ~570 kg reusable (Defra/EA 2008)](https://www.medicalnewstoday.com/articles/327289)
+- [letsrecycle — reusable nappies best-practice ~470 kg](https://www.letsrecycle.com/news/lifecycle-study-reveals-benefits-of-reusable-nappies/)
+- [Chinese cotton garment LCA — childrenswear ≈2.42 kg CO₂e](https://doc.global-sci.org/uploads/Issue/JFBI/v11n1/111_1_short.pdf)
+- [Ramboll / GreenFacts — reusable vs single-use tableware trade-offs](https://www.greenfacts.org/en/single-use-plastics/)

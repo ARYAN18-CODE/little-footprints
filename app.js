@@ -11,7 +11,7 @@
       img: "images/onesie.jpg",
       name: "Organic Cotton Onesie",
       sub: "0–3 months · 3-pack",
-      grade: "B", kg: "2.1 kg CO₂e", note: "per item, all-in",
+      grade: "B", kg: "~2.3 kg CO₂e", note: "per item, all-in",
       breakdown: [["Materials", 62], ["Making it", 48], ["Shipping", 22], ["Packaging", 14]],
       swap: { name: "Recycled-cotton onesie", savePct: 45, saveKg: "0.9 kg" }
     },
@@ -19,7 +19,7 @@
       img: "images/wipes.jpg",
       name: "Scented Baby Wipes",
       sub: "Single-use · 80-pack",
-      grade: "D", kg: "4.8 kg CO₂e", note: "per pack",
+      grade: "D", kg: "~4.8 kg CO₂e", note: "per pack",
       breakdown: [["Materials", 55], ["Making it", 40], ["Shipping", 30], ["Packaging", 78]],
       swap: { name: "Reusable cloth wipes", savePct: 85, saveKg: "4.1 kg" }
     },
@@ -27,7 +27,7 @@
       img: "images/toy.jpg",
       name: "Wooden Stacking Toy",
       sub: "FSC beech · boxed",
-      grade: "A", kg: "0.9 kg CO₂e", note: "per toy",
+      grade: "A", kg: "~0.8 kg CO₂e", note: "per toy",
       breakdown: [["Materials", 40], ["Making it", 30], ["Shipping", 24], ["Packaging", 18]],
       swap: { name: "Reclaimed-wood toy", savePct: 30, saveKg: "0.3 kg" }
     },
@@ -35,7 +35,7 @@
       img: "images/teddy.jpg",
       name: "Organic Cotton Teddy",
       sub: "GOTS cotton · hand-finished",
-      grade: "A", kg: "1.4 kg CO₂e", note: "per toy",
+      grade: "A", kg: "~1.3 kg CO₂e", note: "per toy",
       breakdown: [["Materials", 55], ["Making it", 38], ["Shipping", 26], ["Packaging", 16]],
       swap: { name: "Undyed organic teddy", savePct: 20, saveKg: "0.3 kg" }
     }
