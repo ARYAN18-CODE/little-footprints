@@ -8,36 +8,36 @@
   // grade drives the colour band; breakdown values are % of the bar fill.
   var PRODUCTS = {
     onesie: {
-      emoji: "🍼",
+      img: "images/onesie.jpg",
       name: "Organic Cotton Onesie",
       sub: "0–3 months · 3-pack",
       grade: "B", kg: "2.1 kg CO₂e", note: "per item, all-in",
       breakdown: [["Materials", 62], ["Making it", 48], ["Shipping", 22], ["Packaging", 14]],
-      swap: { emoji: "🌿", name: "Recycled-cotton onesie", savePct: 45, saveKg: "0.9 kg" }
+      swap: { name: "Recycled-cotton onesie", savePct: 45, saveKg: "0.9 kg" }
     },
     wipes: {
-      emoji: "🧻",
+      img: "images/wipes.jpg",
       name: "Scented Baby Wipes",
       sub: "Single-use · 80-pack",
       grade: "D", kg: "4.8 kg CO₂e", note: "per pack",
       breakdown: [["Materials", 55], ["Making it", 40], ["Shipping", 30], ["Packaging", 78]],
-      swap: { emoji: "🧺", name: "Reusable cloth wipes", savePct: 85, saveKg: "4.1 kg" }
+      swap: { name: "Reusable cloth wipes", savePct: 85, saveKg: "4.1 kg" }
     },
     toy: {
-      emoji: "🪵",
+      img: "images/toy.jpg",
       name: "Wooden Stacking Toy",
       sub: "FSC beech · boxed",
       grade: "A", kg: "0.9 kg CO₂e", note: "per toy",
       breakdown: [["Materials", 40], ["Making it", 30], ["Shipping", 24], ["Packaging", 18]],
-      swap: { emoji: "♻️", name: "Reclaimed-wood toy", savePct: 30, saveKg: "0.3 kg" }
+      swap: { name: "Reclaimed-wood toy", savePct: 30, saveKg: "0.3 kg" }
     },
-    bottle: {
-      emoji: "🍼",
-      name: "Plastic Baby Bottle",
-      sub: "Polypropylene · single",
-      grade: "C", kg: "3.3 kg CO₂e", note: "per bottle",
-      breakdown: [["Materials", 50], ["Making it", 58], ["Shipping", 26], ["Packaging", 30]],
-      swap: { emoji: "🫙", name: "Glass bottle (reused 200×)", savePct: 55, saveKg: "1.8 kg" }
+    teddy: {
+      img: "images/teddy.jpg",
+      name: "Organic Cotton Teddy",
+      sub: "GOTS cotton · hand-finished",
+      grade: "A", kg: "1.4 kg CO₂e", note: "per toy",
+      breakdown: [["Materials", 55], ["Making it", 38], ["Shipping", 26], ["Packaging", 16]],
+      swap: { name: "Undyed organic teddy", savePct: 20, saveKg: "0.3 kg" }
     }
   };
 
@@ -57,7 +57,7 @@
     card.className = "pcard pcard--lg";
     card.innerHTML =
       '<div class="pcard__top">' +
-        '<div class="pcard__emoji">' + p.emoji + '</div>' +
+        '<div class="pcard__img"><img src="' + p.img + '" alt="' + p.name + '"></div>' +
         '<div><div class="pcard__name">' + p.name + '</div>' +
         '<div class="pcard__sub">' + p.sub + '</div></div>' +
       '</div>' +
@@ -71,7 +71,6 @@
     swapEl.innerHTML =
       '<div class="swap__label">A lighter swap</div>' +
       '<div class="swap__row">' +
-        '<span class="swap__emoji">' + p.swap.emoji + '</span>' +
         '<span class="swap__name">' + p.swap.name + '</span>' +
       '</div>' +
       '<div class="swap__save">Cuts the footprint by about <b>' + p.swap.savePct + '%</b> — roughly ' + p.swap.saveKg + ' CO₂e saved.</div>';
@@ -120,7 +119,7 @@
         return;
       }
       msg.style.color = "#d8ffe9";
-      msg.textContent = "You're on the list 🌱 We'll be in touch.";
+      msg.textContent = "You're on the list. We'll be in touch.";
       form.reset();
     });
   }

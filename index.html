@@ -8,15 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%23178a5a'/%3E%3Cpath%20d='M24%208C15%208%209%2013.5%209%2021c0%201.2.2%202.4.6%203.5C18%2024.3%2024%2018.7%2024%208Z'%20fill='%23fff'/%3E%3C/svg%3E" />
 </head>
 <body>
   <!-- Navigation -->
   <header class="nav" id="top">
     <div class="wrap nav__inner">
       <a class="brand" href="#top" aria-label="Little Footprints home">
-        <span class="brand__mark" aria-hidden="true">🌱</span>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30"><circle cx="16" cy="16" r="15" fill="#e8f3ec"/><path d="M23.5 7.5C14.8 7.5 9 12.8 9 20.2c0 1.2.2 2.4.6 3.5 8.3-.2 13.9-5.6 13.9-16.2Z" fill="#178a5a"/><path d="M11.5 23.8c2.8-6.8 6.4-10.8 10.4-13.6" stroke="#e8f3ec" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span>
         <span class="brand__name">Little&nbsp;Footprints</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
@@ -63,28 +63,14 @@
           </ul>
         </div>
 
-        <!-- Hero product card -->
-        <div class="hero__card" aria-hidden="true">
-          <div class="pcard pcard--float">
-            <div class="pcard__top">
-              <div class="pcard__emoji">🍼</div>
-              <div>
-                <div class="pcard__name">Organic Cotton Onesie</div>
-                <div class="pcard__sub">0–3 months · 3-pack</div>
-              </div>
-            </div>
-            <div class="score score--b">
-              <span class="score__grade">B</span>
-              <div>
-                <div class="score__kg">2.1 kg CO₂e</div>
-                <div class="score__note">per item, all-in</div>
-              </div>
-            </div>
-            <div class="bars">
-              <div class="bar"><span>Materials</span><i style="--w:62%"></i></div>
-              <div class="bar"><span>Making it</span><i style="--w:48%"></i></div>
-              <div class="bar"><span>Shipping</span><i style="--w:22%"></i></div>
-              <div class="bar"><span>Packaging</span><i style="--w:14%"></i></div>
+        <!-- Hero photo -->
+        <div class="hero__media">
+          <img src="images/hero.jpg" alt="A grandparent holding a happy toddler outdoors" />
+          <div class="hero__badge">
+            <span class="hero__badge-grade">A</span>
+            <div class="hero__badge-text">
+              <strong>Low footprint</strong>
+              <span>verified &amp; sourced</span>
             </div>
           </div>
         </div>
@@ -226,10 +212,10 @@
 
         <div class="demo">
           <div class="demo__picker" role="tablist" aria-label="Choose a product">
-            <button class="chip is-active" role="tab" data-product="onesie">👕 Cotton onesie</button>
-            <button class="chip" role="tab" data-product="wipes">🧻 Baby wipes</button>
-            <button class="chip" role="tab" data-product="toy">🪵 Wooden toy</button>
-            <button class="chip" role="tab" data-product="bottle">🍼 Baby bottle</button>
+            <button class="chip is-active" role="tab" data-product="onesie">Cotton onesie</button>
+            <button class="chip" role="tab" data-product="wipes">Baby wipes</button>
+            <button class="chip" role="tab" data-product="toy">Wooden toy</button>
+            <button class="chip" role="tab" data-product="teddy">Cotton teddy</button>
           </div>
 
           <div class="demo__stage">
@@ -254,17 +240,17 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card__icon">👶</div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7-4.3-9.2-8.2C1.3 9.4 2.6 6.2 5.6 5.8c1.9-.3 3.5.8 4.4 2.2.9-1.4 2.5-2.5 4.4-2.2 3 .4 4.3 3.6 2.8 6.5C19 16.2 12 20.5 12 20.5Z"/></svg></div>
             <h3>New parents</h3>
             <p>You're already careful about what touches your baby. Now you can be just as careful about the footprint it leaves behind.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🎁</div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 9h16v11H4zM3 9h18M12 9v11M12 9S9.5 3.5 7 5s2 4 5 4Zm0 0s2.5-5.5 5-4-2 4-5 4Z"/></svg></div>
             <h3>Thoughtful gift-givers</h3>
             <p>Buying for someone else's little one? Give something lovely that's also kind to the planet they'll grow up on.</p>
           </article>
           <article class="card">
-            <div class="card__icon">🛒</div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 21c7-3 9-8 9-13V5l-9-2-9 2v3c0 5 2 10 9 13Z"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></div>
             <h3>Conscious shoppers</h3>
             <p>Anyone tired of vague "eco" claims and ready for a number they can actually trust and compare.</p>
           </article>
@@ -352,7 +338,7 @@
     <div class="wrap footer__inner">
       <div>
         <a class="brand brand--footer" href="#top">
-          <span class="brand__mark" aria-hidden="true">🌱</span>
+          <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30"><circle cx="16" cy="16" r="15" fill="#e8f3ec"/><path d="M23.5 7.5C14.8 7.5 9 12.8 9 20.2c0 1.2.2 2.4.6 3.5 8.3-.2 13.9-5.6 13.9-16.2Z" fill="#178a5a"/><path d="M11.5 23.8c2.8-6.8 6.4-10.8 10.4-13.6" stroke="#e8f3ec" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></span>
           <span class="brand__name">Little Footprints</span>
         </a>
         <p class="muted small">Carbon clarity for the things your little ones use every day.</p>
@@ -369,6 +355,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
